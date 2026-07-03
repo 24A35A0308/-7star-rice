@@ -18,7 +18,7 @@ export default function Home() {
 
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center bg-cover bg-center text-white"
+        className="min-h-screen flex items-center justify-center bg-cover bg-[center_top] text-white"
         style={{
           backgroundImage: "url('/images/rice-mill.png')",
         }}
