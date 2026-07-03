@@ -10,6 +10,7 @@ import WhatsAppButton from "../components/WhatsAppButton";
 import Stats from "../components/Stats";
 import Comparison from "../components/Comparison";
 import Map from "../components/Map";
+import DealerForm from "@/components/DealerForm";
 
 export default function Home() {
   return (
@@ -107,6 +108,8 @@ export default function Home() {
       <WhatsAppButton />
 
       <Comparison />
+
+      <DealerForm />
 
       <Map />
 
