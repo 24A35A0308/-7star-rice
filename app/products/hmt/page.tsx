@@ -88,7 +88,7 @@ export default function HMTPage() {
 
           <div className="flex gap-4 mt-10">
             <a
-              href="https://wa.me/919866426247"
+              href="https://wa.me/918340096545"
               target="_blank"
               className="bg-green-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:bg-green-800 transition"
             >
@@ -96,7 +96,7 @@ export default function HMTPage() {
             </a>
 
             <a
-              href="tel:+919866426247"
+              href="tel:+918340096545"
               className="bg-yellow-400 text-black px-8 py-4 rounded-xl font-bold shadow-lg hover:scale-105 transition"
             >
               Call Now
