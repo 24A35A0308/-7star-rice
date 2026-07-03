@@ -25,8 +25,12 @@ export default function Home() {
       >
 <div className="bg-black/50 p-10 rounded-2xl text-center max-w-4xl">
 
+  <p className="text-sm md:text-base tracking-widest text-gray-200 mb-3">
+    SRI SAI BALAJEE MODERN RICE MILL
+  </p>
+
   <h1 className="text-5xl md:text-7xl font-extrabold text-yellow-400">
-    7STARS RICE
+     7STARS RICE
   </h1>
 
   <p className="mt-6 text-xl md:text-3xl font-semibold">
@@ -70,11 +74,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-5xl font-bold text-center text-green-700">
-            About 7STARS RICE
+            About Sri Sai Balajee Modern Rice MIll
           </h2>
 
           <p className="mt-10 text-xl text-gray-700 text-center leading-9">
-            7STARS RICE is a trusted rice mill located in Andhra Pradesh.
+            Sri Sai Balajee Modern Rice Mill is a trusted rice mill located in Andhra Pradesh.
             We specialize in producing premium-quality rice with modern
             processing technology while maintaining traditional purity.
 
