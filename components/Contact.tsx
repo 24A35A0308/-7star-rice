@@ -91,7 +91,7 @@ export default function Contact() {
               name="from_name"
               placeholder="Your Name"
               required
-              className="w-full border rounded-lg p-3"
+              className="w-full border-gray-300 rounded-lg p-3 text-gray-900 placeholder-gray-500"
             />
 
             <input
@@ -99,7 +99,7 @@ export default function Contact() {
               name="reply_to"
               placeholder="Your Email"
               required
-              className="w-full border rounded-lg p-3"
+              className="w-full border border-gray-300 rounded-lg p-3 text-gray-900 placeholder-gray-500"
             />
 
             <input
@@ -107,7 +107,7 @@ export default function Contact() {
               name="phone"
               placeholder="Phone Number"
               required
-              className="w-full border rounded-lg p-3"
+               className="w-full border border-gray-300 rounded-lg p-3 text-gray-900 placeholder-gray-500"
             />
 
             <textarea
@@ -115,7 +115,7 @@ export default function Contact() {
               placeholder="Your Message"
               rows={5}
               required
-              className="w-full border rounded-lg p-3"
+               className="w-full border border-gray-300 rounded-lg p-3 text-gray-900 placeholder-gray-500"
             ></textarea>
 
             <button
