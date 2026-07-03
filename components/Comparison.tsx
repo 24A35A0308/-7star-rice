@@ -11,7 +11,7 @@ export default function Comparison() {
           Choose the perfect rice for your family or business.
         </p>
 
-        {/* Responsive scroll container */}
+        {/* Scroll container for mobile */}
         <div className="overflow-x-auto mt-12 pb-4">
 
           <table className="w-full min-w-[600px] border border-gray-300 rounded-lg overflow-hidden">
@@ -19,54 +19,58 @@ export default function Comparison() {
             {/* HEADER */}
             <thead className="bg-green-700 text-white">
               <tr>
-                <th className="p-3 md:p-4 text-left">Feature</th>
-                <th className="p-3 md:p-4">RGL</th>
-                <th className="p-3 md:p-4">BPT</th>
-                <th className="p-3 md:p-4">HMT</th>
+                <th className="p-3 md:p-4 text-left font-bold">Feature</th>
+                <th className="p-3 md:p-4 font-bold">RGL</th>
+                <th className="p-3 md:p-4 font-bold">BPT</th>
+                <th className="p-3 md:p-4 font-bold">HMT</th>
               </tr>
             </thead>
 
             {/* BODY */}
             <tbody>
 
+              {/* Softness */}
               <tr className="border-b">
-                <td className="p-3 md:p-4 font-semibold whitespace-nowrap">
+                <td className="p-3 md:p-4 font-bold text-gray-900 whitespace-nowrap">
                   Softness
                 </td>
-                <td className="text-center whitespace-nowrap">⭐⭐⭐⭐⭐</td>
-                <td className="text-center whitespace-nowrap">⭐⭐⭐⭐</td>
-                <td className="text-center whitespace-nowrap">⭐⭐⭐⭐⭐</td>
+                <td className="text-center text-gray-900 font-medium whitespace-nowrap">⭐⭐⭐⭐⭐</td>
+                <td className="text-center text-gray-900 font-medium whitespace-nowrap">⭐⭐⭐⭐</td>
+                <td className="text-center text-gray-900 font-medium whitespace-nowrap">⭐⭐⭐⭐⭐</td>
               </tr>
 
+              {/* Aroma */}
               <tr className="border-b bg-gray-50">
-                <td className="p-3 md:p-4 font-semibold whitespace-nowrap">
+                <td className="p-3 md:p-4 font-bold text-gray-900 whitespace-nowrap">
                   Aroma
                 </td>
-                <td className="text-center whitespace-nowrap">⭐⭐⭐⭐</td>
-                <td className="text-center whitespace-nowrap">⭐⭐⭐⭐⭐</td>
-                <td className="text-center whitespace-nowrap">⭐⭐⭐⭐⭐</td>
+                <td className="text-center text-gray-900 font-medium whitespace-nowrap">⭐⭐⭐⭐</td>
+                <td className="text-center text-gray-900 font-medium whitespace-nowrap">⭐⭐⭐⭐⭐</td>
+                <td className="text-center text-gray-900 font-medium whitespace-nowrap">⭐⭐⭐⭐⭐</td>
               </tr>
 
+              {/* Daily Meals */}
               <tr className="border-b">
-                <td className="p-3 md:p-4 font-semibold whitespace-nowrap">
+                <td className="p-3 md:p-4 font-bold text-gray-900 whitespace-nowrap">
                   Daily Meals
                 </td>
-                <td className="text-center whitespace-nowrap">✔️</td>
-                <td className="text-center whitespace-nowrap">✔️</td>
-                <td className="text-center whitespace-nowrap">✔️</td>
+                <td className="text-center text-gray-900 font-medium whitespace-nowrap">✔️</td>
+                <td className="text-center text-gray-900 font-medium whitespace-nowrap">✔️</td>
+                <td className="text-center text-gray-900 font-medium whitespace-nowrap">✔️</td>
               </tr>
 
+              {/* Packing */}
               <tr className="border-b bg-gray-50">
-                <td className="p-3 md:p-4 font-semibold whitespace-nowrap">
+                <td className="p-3 md:p-4 font-bold text-gray-900 whitespace-nowrap">
                   Packing
                 </td>
-                <td className="text-center whitespace-nowrap text-sm md:text-base">
+                <td className="text-center text-gray-900 font-medium whitespace-nowrap text-sm md:text-base">
                   26kg / 30kg
                 </td>
-                <td className="text-center whitespace-nowrap text-sm md:text-base">
+                <td className="text-center text-gray-900 font-medium whitespace-nowrap text-sm md:text-base">
                   26kg / 30kg
                 </td>
-                <td className="text-center whitespace-nowrap text-sm md:text-base">
+                <td className="text-center text-gray-900 font-medium whitespace-nowrap text-sm md:text-base">
                   26kg / 30kg
                 </td>
               </tr>
