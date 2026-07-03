@@ -74,7 +74,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-5xl font-bold text-center text-green-700">
-            About Sri Sai Balajee Modern Rice MIll
+            About Sri Sai Balajee Modern Rice Mill
           </h2>
 
           <p className="mt-10 text-xl text-gray-700 text-center leading-9">
