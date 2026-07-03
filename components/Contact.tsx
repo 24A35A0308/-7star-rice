@@ -53,7 +53,7 @@ export default function Contact() {
               </h3>
 
               <p className="mb-4 text-lg font-medium text-gray-800">
-                📞 Phone: +91 9866426247
+                📞 Phone: +91 8340096545
               </p>
 
               <p className="mb-4 text-lg font-medium text-gray-800">
@@ -69,7 +69,7 @@ export default function Contact() {
               </p>
 
               <a
-                href="https://wa.me/919866426247"
+                href="https://wa.me/918340096545"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700"

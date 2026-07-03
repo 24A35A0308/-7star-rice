@@ -31,7 +31,7 @@ export default function Footer() {
           <div>
             <h2 className="text-2xl font-bold">Contact</h2>
 
-            <p className="mt-4">📞 +91 9866426247</p>
+            <p className="mt-4">📞 +91 8340096545</p>
             <p>📞 +91 9030373674</p>
             <p>📧 saibalajeebpt@gmail.com</p>
             <p>📍 B. Parthipadu, Pithapuram, Andhra Pradesh</p>
