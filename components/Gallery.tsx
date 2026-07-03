@@ -2,9 +2,8 @@ import Image from "next/image";
 
 const images = [
   "/images/factory.jpg",
-  "/images/rgl-v2.png",
-  "/images/bpt-v2.png",
-  "/images/hmt-v2.png",
+  "/images/warehousestock.jpg",
+  "/images/millingunitplatform.jpg",
   "/images/dryer.jpg",
   "/images/boiler.jpg",
   "/images/sortex.jpg",
