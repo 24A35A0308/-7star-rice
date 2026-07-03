@@ -13,9 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://7star-rice.vercel.app"),
+
   title: "Sri Sai Balajee Modern Rice Mill | 7STARS RICE",
+
   description:
-    "Sri Sai Balajee Modern Rice Mill is a trusted manufacturer of premium quality rice in Andhra Pradesh. We supply RGL, BPT and HMT rice under the 7STARS RICE brand with modern processing and traditional purity.",
+    "Sri Sai Balajee Modern Rice Mill is a trusted manufacturer of premium quality rice in Andhra Pradesh. We supply RGL, BPT and HMT rice under the 7STARS RICE brand with modern processing, hygienic packaging and traditional purity.",
+
   keywords: [
     "7STARS RICE",
     "Sri Sai Balajee Modern Rice Mill",
@@ -26,18 +30,29 @@ export const metadata: Metadata = {
     "RGL Rice",
     "BPT Rice",
     "HMT Rice",
-    "Andhra Pradesh Rice",
-    "Rice Export",
+    "Rice in Andhra Pradesh",
     "Rice Wholesale",
+    "Rice Export",
   ],
-  authors: [{ name: "Sri Sai Balajee Modern Rice Mill" }],
+
+  authors: [
+    {
+      name: "Sri Sai Balajee Modern Rice Mill",
+    },
+  ],
+
   creator: "Sri Sai Balajee Modern Rice Mill",
+
   publisher: "Sri Sai Balajee Modern Rice Mill",
+
+  verification: {
+    google: "RbMn54RC58NzZ7xOyEe8ohyFwuIwefYTtkirCmtJsJE",
+  },
 
   openGraph: {
     title: "Sri Sai Balajee Modern Rice Mill | 7STARS RICE",
     description:
-      "Premium quality RGL, BPT and HMT rice manufactured with modern technology and trusted quality.",
+      "Premium quality RGL, BPT and HMT rice manufactured using modern technology with trusted quality.",
     url: "https://7star-rice.vercel.app/",
     siteName: "7STARS RICE",
     locale: "en_IN",
