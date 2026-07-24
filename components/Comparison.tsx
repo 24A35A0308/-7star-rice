@@ -1,86 +1,54 @@
+﻿const rows = [
+  ["Softness", "Excellent", "Very good", "Excellent"],
+  ["Aroma", "Very good", "Excellent", "Excellent"],
+  ["Best use", "Daily meals", "Family cooking", "Premium meals"],
+  ["Packing", "26kg / 30kg", "26kg / 30kg", "26kg / 30kg"],
+];
+
 export default function Comparison() {
   return (
-    <section className="bg-white py-20">
-      <div className="max-w-6xl mx-auto px-6">
-
-        <h2 className="text-4xl font-bold text-center text-green-700">
-          Compare Our Rice Varieties
-        </h2>
-
-        <p className="text-center text-gray-600 mt-4">
-          Choose the perfect rice for your family or business.
-        </p>
-
-        {/* Scroll container for mobile */}
-        <div className="overflow-x-auto mt-12 pb-4">
-
-          <table className="w-full min-w-[600px] border border-gray-300 rounded-lg overflow-hidden">
-
-            {/* HEADER */}
-            <thead className="bg-green-700 text-white">
-              <tr>
-                <th className="p-3 md:p-4 text-left font-bold">Feature</th>
-                <th className="p-3 md:p-4 font-bold">RGL</th>
-                <th className="p-3 md:p-4 font-bold">BPT</th>
-                <th className="p-3 md:p-4 font-bold">HMT</th>
-              </tr>
-            </thead>
-
-            {/* BODY */}
-            <tbody>
-
-              {/* Softness */}
-              <tr className="border-b">
-                <td className="p-3 md:p-4 font-bold text-gray-900 whitespace-nowrap">
-                  Softness
-                </td>
-                <td className="text-center text-gray-900 font-medium whitespace-nowrap">⭐⭐⭐⭐⭐</td>
-                <td className="text-center text-gray-900 font-medium whitespace-nowrap">⭐⭐⭐⭐</td>
-                <td className="text-center text-gray-900 font-medium whitespace-nowrap">⭐⭐⭐⭐⭐</td>
-              </tr>
-
-              {/* Aroma */}
-              <tr className="border-b bg-gray-50">
-                <td className="p-3 md:p-4 font-bold text-gray-900 whitespace-nowrap">
-                  Aroma
-                </td>
-                <td className="text-center text-gray-900 font-medium whitespace-nowrap">⭐⭐⭐⭐</td>
-                <td className="text-center text-gray-900 font-medium whitespace-nowrap">⭐⭐⭐⭐⭐</td>
-                <td className="text-center text-gray-900 font-medium whitespace-nowrap">⭐⭐⭐⭐⭐</td>
-              </tr>
-
-              {/* Daily Meals */}
-              <tr className="border-b">
-                <td className="p-3 md:p-4 font-bold text-gray-900 whitespace-nowrap">
-                  Daily Meals
-                </td>
-                <td className="text-center text-gray-900 font-medium whitespace-nowrap">✔️</td>
-                <td className="text-center text-gray-900 font-medium whitespace-nowrap">✔️</td>
-                <td className="text-center text-gray-900 font-medium whitespace-nowrap">✔️</td>
-              </tr>
-
-              {/* Packing */}
-              <tr className="border-b bg-gray-50">
-                <td className="p-3 md:p-4 font-bold text-gray-900 whitespace-nowrap">
-                  Packing
-                </td>
-                <td className="text-center text-gray-900 font-medium whitespace-nowrap text-sm md:text-base">
-                  26kg / 30kg
-                </td>
-                <td className="text-center text-gray-900 font-medium whitespace-nowrap text-sm md:text-base">
-                  26kg / 30kg
-                </td>
-                <td className="text-center text-gray-900 font-medium whitespace-nowrap text-sm md:text-base">
-                  26kg / 30kg
-                </td>
-              </tr>
-
-            </tbody>
-
-          </table>
-
+    <section className="bg-stone-50 py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="section-intro">
+          <p className="section-eyebrow">Compare varieties</p>
+          <h2 className="section-title">
+            Find the right rice for your kitchen or business.
+          </h2>
+          <p className="section-text mt-6">
+            A quick guide to help families, dealers, and wholesalers choose with confidence.
+          </p>
         </div>
 
+        <div className="section-content overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm">
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[680px] text-left">
+              <thead className="bg-emerald-900 text-white">
+                <tr>
+                  <th className="px-6 py-5 text-sm font-bold uppercase tracking-wide">Feature</th>
+                  <th className="px-6 py-5 text-sm font-bold uppercase tracking-wide">RGL</th>
+                  <th className="px-6 py-5 text-sm font-bold uppercase tracking-wide">BPT</th>
+                  <th className="px-6 py-5 text-sm font-bold uppercase tracking-wide">HMT</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((row) => (
+                  <tr key={row[0]} className="border-b border-stone-100 last:border-b-0">
+                    {row.map((cell, index) => (
+                      <td
+                        key={`${row[0]}-${index}`}
+                        className={`px-6 py-5 text-base ${
+                          index === 0 ? "font-extrabold text-slate-950" : "font-medium text-slate-600"
+                        }`}
+                      >
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
   );

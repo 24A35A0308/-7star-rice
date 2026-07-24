@@ -8,22 +8,48 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
 html {
   scroll-behavior: smooth;
 }
+
+.section-intro {
+  @apply mx-auto max-w-6xl text-center;
+}
+
+.section-eyebrow {
+  @apply text-sm font-bold uppercase tracking-[0.22em] text-emerald-700;
+}
+
+.section-eyebrow-dark {
+  @apply text-sm font-bold uppercase tracking-[0.22em] text-amber-200;
+}
+
+.section-title {
+  @apply mt-4 text-2xl font-extrabold leading-snug text-slate-950 sm:text-3xl md:text-[2rem];
+}
+
+.section-title-dark {
+  @apply mt-4 text-2xl font-extrabold leading-snug text-white sm:text-3xl md:text-[2rem];
+}
+
+.section-text {
+  @apply text-base leading-8 text-slate-600 sm:text-lg sm:leading-9;
+}
+
+.section-text-dark {
+  @apply text-base leading-8 text-emerald-50/80 sm:text-lg sm:leading-9;
+}
+
+.section-content {
+  @apply mt-8;
+}
+

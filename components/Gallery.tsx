@@ -1,51 +1,41 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 
 const images = [
-  "/images/factory.jpg",
-  "/images/warehousestock.jpg",
-  "/images/millingunitplatform.jpg",
-  "/images/dryer.jpg",
-  "/images/boiler.jpg",
-  "/images/sortex.jpg",
-  "/images/processing-unit.jpg",
-  "/images/conveyor.jpg",
+  { src: "/images/factory.jpg", alt: "Rice mill facility" },
+  { src: "/images/warehousestock.jpg", alt: "Warehouse stock" },
+  { src: "/images/millingunitplatform.jpg", alt: "Milling unit platform" },
+  { src: "/images/dryer.jpg", alt: "Dryer plant" },
+  { src: "/images/sortex.jpg", alt: "Color sorter" },
+  { src: "/images/conveyor.jpg", alt: "Conveyor system" },
 ];
 
 export default function Gallery() {
   return (
-    <section
-      id="gallery"
-      className="py-20 bg-white"
-    >
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="gallery" className="bg-stone-50 py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="section-intro">
+          <p className="section-eyebrow">Gallery</p>
+          <h2 className="section-title">
+            A closer look at our mill and process.
+          </h2>
+          <p className="section-text mt-6">
+            Clean spaces, modern equipment, and practical storage support the quality of every batch.
+          </p>
+        </div>
 
-        <h2 className="text-4xl font-bold text-center text-green-700">
-          Our Gallery
-        </h2>
-
-        <p className="text-center text-gray-600 mt-4">
-          Take a look at our rice mill, products and facilities.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
-
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl shadow-lg p-4 flex items-center justify-center"
-            >
+        <div className="section-content grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {images.map((image) => (
+            <div key={image.src} className="overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm">
               <Image
-                src={image}
-                alt={`Gallery ${index + 1}`}
-                width={500}
-                height={400}
-                className="w-full h-80 object-contain bg-white p-2 transitionn-transform duration-300 hover:scale-105"
+                src={image.src}
+                alt={image.alt}
+                width={600}
+                height={460}
+                className="h-72 w-full object-cover transition duration-300 hover:scale-105"
               />
             </div>
           ))}
-
         </div>
-
       </div>
     </section>
   );
